@@ -1,24 +1,41 @@
-# API utilizada:
-Decidimos utilizar a API referente a serie The Simpsons e achamos a seguinte Api utilizada.
-*https://thesimpsonsapi.com*
+# API utilizada
 
-# O que é desenvolvido:
-Ao realizar a pesquisa todas as respostas são retornadas em formato JSON. Os seguintes campos são fornecidos ao realizar a pesquisa...
-*id, age, aniversário, gênero, nome, ocupação, retrato, frase, status*
+Para o desenvolvimento do projeto, decidimos utilizar a API **The Simpsons API**, disponível em: https://thesimpsonsapi.com.
 
-# Endereço chamado:
-Uma pesquisa feita por exemplo pode retornar na seguinte url...
-*https://thesimpsonsapi.com/api/characters*
+# O que foi desenvolvido
 
-# Como rodar:
-Na aba de pesquisa digite uma numeração e aparecerá um dos personagens da série *The Simpsons*.
+Ao realizar uma requisição à API, os dados dos personagens são retornados no formato JSON. Entre as informações disponibilizadas estão:
 
-# Captura do sistema funcionando:
-*Marge*
-![alt text](image-1.png)
+- ID do personagem;
+- Idade;
+- Data de aniversário;
+- Gênero;
+- Nome;
+- Ocupação;
+- Imagem do personagem;
+- Frase característica;
+- Status.
 
-*Lisa*
-![alt text](image-2.png)
+# Endereço da requisição
 
-# Dificuldade encontrada:
-O principal desafio encntrado é por a API não possuir filtro de busca nativa por parâmetro do URL. 
+Um exemplo de endereço utilizado para acessar os dados dos personagens é:
+
+https://thesimpsonsapi.com/api/characters
+
+# Como executar o sistema
+
+Na barra de pesquisa do sistema, basta digitar um número correspondente ao ID de um personagem. Após realizar a pesquisa, as informações do personagem escolhido serão exibidas na tela.
+
+# Capturas do sistema em funcionamento
+
+**Personagem: Marge**
+
+![Marge](image-1.png)
+
+**Personagem: Lisa**
+
+![Lisa](image-2.png)
+
+# Dificuldades encontradas
+
+A principal dificuldade encontrada durante o desenvolvimento foi a ausência de um filtro de pesquisa nativo por parâmetros na URL da API. Por esse motivo, foi necessário adaptar a lógica de busca no próprio sistema para localizar os personagens de acordo com o ID informado pelo usuário.
